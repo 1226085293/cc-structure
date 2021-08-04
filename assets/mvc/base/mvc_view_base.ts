@@ -9,23 +9,24 @@ abstract class mvc_view_base<CT extends mvc_controller_base<any>, MT extends mvc
         super();
         this.init(arguments[0]);
     }
+    /* ***************private*************** */
+    private _data: MT;
+    private _controller: CT;
     /* ***************public*************** */
-    public controller: CT;
-    public data: MT;
     /* -------------------------------segmentation------------------------------- */
     onEnable() {
-        this.data.bind(<any>this);
+        this._data.bind(<any>this);
     }
     onDisable() {
-        this.data.unbind(<any>this);
+        this._data.unbind(<any>this);
     }
     /* ***************功能函数*************** */
     public init(init_: mvc_view_base.init<CT>): void {
         if (!init_) {
             return;
         }
-        this.controller = init_.controller;
-        this.data = this.controller.data;
+        this._controller = init_.controller;
+        this._data = this._controller.data;
     }
 }
 

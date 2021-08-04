@@ -9,7 +9,7 @@ class mvc_module1_m<VT extends mvc_module1_view_base<any, any>> extends mvc_mode
     public get input_s() { return this._input_s; }
     public set input_s(value_s_) {
         this._input_s = value_s_;
-        this._view("set_label")();
+        this._view("set_label")(this._input_s);
     }
 }
 

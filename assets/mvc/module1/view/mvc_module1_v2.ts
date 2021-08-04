@@ -20,8 +20,8 @@ export default class mvc_module1_v2<CT extends mvc_module1_c<MT>, MT extends mvc
     label: cc.Label = null;
     /* -------------------------------segmentation------------------------------- */
     /* ***************功能函数*************** */
-    set_label(): void {
-        this.label.string = this.data.input_s + "_view2";
+    set_label(value_s_: string): void {
+        this.label.string = value_s_ + "_view2";
     }
     /* ***************事件*************** */
     public input() {
