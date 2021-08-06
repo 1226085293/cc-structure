@@ -1,7 +1,7 @@
 import mvc_module1 from "../mvc_module1";
 import mvc_module1_m from "../model/mvc_module1_m";
 import mvc_module1_view_base from "../mvc_module1_view_base";
-import mvc_module1_c from "../controller/mvc_module1_c/mvc_module1_c";
+import mvc_module1_c from "../controller/mvc_module1_c";
 
 const {ccclass, property} = cc._decorator;
 

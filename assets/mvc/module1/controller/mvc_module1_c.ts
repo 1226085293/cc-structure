@@ -1,5 +1,5 @@
-import mvc_controller_base from "../../../base/mvc_controller_base";
-import mvc_module1_m from "../../model/mvc_module1_m";
+import mvc_controller_base from "../../base/mvc_controller_base";
+import mvc_module1_m from "../model/mvc_module1_m";
 
 class mvc_module1_c<MT extends mvc_module1_m<any>> extends mvc_controller_base<MT> {
     /* ***************public*************** */

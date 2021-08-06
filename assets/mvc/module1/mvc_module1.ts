@@ -1,4 +1,4 @@
-import mvc_module1_c from "./controller/mvc_module1_c/mvc_module1_c";
+import mvc_module1_c from "./controller/mvc_module1_c";
 import mvc_module1_m from "./model/mvc_module1_m";
 
 module mvc_module1 {
